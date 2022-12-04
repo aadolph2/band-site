@@ -18,10 +18,12 @@
         padding: 1.6rem 12rem 1.6rem;
 
         @include tablet {
-            
             padding-left: 3rem;
             padding-top: 2.5rem;
             padding-right: 3rem;
+        }
+        @include desktop {
+            padding-left: 15rem;
         }
     }
 }
@@ -77,6 +79,12 @@
             padding-top: 25rem;
             padding-bottom: 25rem;
         }
+        @include desktop {
+            margin: 0;
+            padding-top: 35rem;
+            padding-bottom: 35rem;
+            padding-left: 15rem;
+        }
     }
 }
 
@@ -91,6 +99,10 @@
             margin-top: 3.6rem;
             font-size: 3.6rem;
         }
+        @include desktop {
+            margin-left: 0;
+            padding-left: 15rem;
+        }
     }
 
     img{
@@ -99,6 +111,9 @@
 
         @include tablet {
             padding: 0 10rem;
+        }
+        @include desktop {
+            padding: 0 20rem;
         }
     }
     &__quote{
@@ -115,6 +130,9 @@
             font-size: 2.4rem;
             margin-bottom: 1.6rem;
         }
+        @include desktop {
+            padding: 0 20rem;
+        }
     }
     &__credit {
         margin-left: 1.6rem;
@@ -128,6 +146,9 @@
             padding: 0 10rem;
             font-weight: 400;
         }
+        @include desktop {
+            padding: 0 20rem;
+        }
     }
 }
 
@@ -135,8 +156,10 @@
     color: $primary-color;
 
     @include tablet {
-        margin-left: 9rem;
-        margin-right: 9rem;
+        margin: 0 9rem;
+    }
+    @include desktop {
+        margin: 0 19rem;
     }
     h2{
         font-weight: 600;
@@ -148,6 +171,7 @@
             font-size: 2.4rem;
             margin-left: 1rem;
         }
+
     }
     &__info{
         font-size: 1.8rem;
@@ -176,6 +200,9 @@
     @include tablet {
         padding-left: 2.4rem;
     }
+    @include desktop {
+        padding: 0 15rem;
+    }
 
     h1 {
         margin: 2.4rem 1.6rem 1.6rem;
@@ -186,6 +213,7 @@
         @include tablet {
             margin-left: 0;
             margin-top: 3.6rem;
+            font-size: 3.6rem;
         }
     }
     img {
@@ -206,6 +234,10 @@
 .contact {
     background-color: $primary-color;
     color: $secondary-color;
+
+    @include desktop {
+        padding: 0 15rem;
+    }
     
     h1 {
         margin: 0;
@@ -229,6 +261,11 @@
             display: flex;
             margin: 0 2.4rem;
             padding-top: 3.6rem;
+        }
+        h1{
+            @include tablet {
+                font-size: 3.6rem;
+            }
         }
     }
 }
@@ -260,6 +297,7 @@
     }
     a:link{
         text-decoration: none;
+        color: $secondary-color;
     }
     a:visited{
         color: $secondary-color;    

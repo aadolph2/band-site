@@ -55,6 +55,11 @@ body {
     padding-right: 3rem;
   }
 }
+@media (min-width: 1280px) {
+  .header img {
+    padding-left: 15rem;
+  }
+}
 
 .navbar {
   display: flex;
@@ -107,6 +112,14 @@ body {
     padding-bottom: 25rem;
   }
 }
+@media (min-width: 1280px) {
+  .hero h1 {
+    margin: 0;
+    padding-top: 35rem;
+    padding-bottom: 35rem;
+    padding-left: 15rem;
+  }
+}
 
 .about h1 {
   margin: 2.4rem 1.6rem 1.6rem;
@@ -120,6 +133,12 @@ body {
     font-size: 3.6rem;
   }
 }
+@media (min-width: 1280px) {
+  .about h1 {
+    margin-left: 0;
+    padding-left: 15rem;
+  }
+}
 .about img {
   width: 100%;
   padding: 0 1.6rem;
@@ -127,6 +146,11 @@ body {
 @media (min-width: 768px) {
   .about img {
     padding: 0 10rem;
+  }
+}
+@media (min-width: 1280px) {
+  .about img {
+    padding: 0 20rem;
   }
 }
 .about__quote {
@@ -145,6 +169,11 @@ body {
     margin-bottom: 1.6rem;
   }
 }
+@media (min-width: 1280px) {
+  .about__quote {
+    padding: 0 20rem;
+  }
+}
 .about__credit {
   margin-left: 1.6rem;
   margin-right: 1.6rem;
@@ -159,14 +188,23 @@ body {
     font-weight: 400;
   }
 }
+@media (min-width: 1280px) {
+  .about__credit {
+    padding: 0 20rem;
+  }
+}
 
 .bio {
   color: #323232;
 }
 @media (min-width: 768px) {
   .bio {
-    margin-left: 9rem;
-    margin-right: 9rem;
+    margin: 0 9rem;
+  }
+}
+@media (min-width: 1280px) {
+  .bio {
+    margin: 0 19rem;
   }
 }
 .bio h2 {
@@ -206,6 +244,11 @@ body {
     padding-left: 2.4rem;
   }
 }
+@media (min-width: 1280px) {
+  .gallery {
+    padding: 0 15rem;
+  }
+}
 .gallery h1 {
   margin: 2.4rem 1.6rem 1.6rem;
   font-size: 3rem;
@@ -216,6 +259,7 @@ body {
   .gallery h1 {
     margin-left: 0;
     margin-top: 3.6rem;
+    font-size: 3.6rem;
   }
 }
 .gallery img {
@@ -235,6 +279,11 @@ body {
 .contact {
   background-color: #323232;
   color: #FFFFFF;
+}
+@media (min-width: 1280px) {
+  .contact {
+    padding: 0 15rem;
+  }
 }
 .contact h1 {
   margin: 0;
@@ -259,6 +308,11 @@ body {
     display: flex;
     margin: 0 2.4rem;
     padding-top: 3.6rem;
+  }
+}
+@media (min-width: 768px) {
+  .contact__socials h1 {
+    font-size: 3.6rem;
   }
 }
 
@@ -292,6 +346,7 @@ body {
 }
 .booking a:link {
   text-decoration: none;
+  color: #FFFFFF;
 }
 .booking a:visited {
   color: #FFFFFF;
