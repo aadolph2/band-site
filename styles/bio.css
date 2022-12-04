@@ -37,9 +37,20 @@ body {
   background-color: #323232;
   width: 100%;
 }
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+  }
+}
 .header img {
   width: 100%;
-  padding: 2rem 15rem;
+  height: auto;
+  padding: 1.6rem 12rem 1.6rem;
+}
+@media (min-width: 768px) {
+  .header img {
+    padding-left: 2.4rem;
+  }
 }
 
 .navbar {
@@ -79,6 +90,11 @@ body {
   font-weight: 600;
   font-size: 4rem;
 }
+@media (min-width: 768px) {
+  .hero h1 {
+    padding-left: 2.4rem;
+  }
+}
 
 .about h1 {
   margin: 2.4rem 1.6rem 1.6rem;
@@ -86,9 +102,19 @@ body {
   font-weight: 600;
   color: #323232;
 }
+@media (min-width: 768px) {
+  .about h1 {
+    padding-left: 2.4rem;
+  }
+}
 .about img {
   width: 100%;
   padding: 0 1.6rem;
+}
+@media (min-width: 768px) {
+  .about img {
+    padding: 0 10rem;
+  }
 }
 .about p {
   margin-left: 1.6rem;
@@ -96,28 +122,69 @@ body {
   font-size: 2rem;
   font-weight: 600;
 }
+@media (min-width: 768px) {
+  .about p {
+    padding: 0 10rem;
+  }
+}
 
 .bio h2 {
   font-weight: 600;
   font-size: 2rem;
   margin-left: 1.6rem;
 }
-.bio p {
+@media (min-width: 768px) {
+  .bio h2 {
+    padding: 0 10rem;
+  }
+}
+.bio__info {
   font-size: 1.8rem;
   margin-left: 1.6rem;
   margin-right: 1.6rem;
 }
+@media (min-width: 768px) {
+  .bio__info {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 10rem;
+  }
+}
+@media (min-width: 768px) {
+  .bio__info p {
+    margin-right: 2.4rem;
+  }
+}
 
+@media (min-width: 768px) {
+  .gallery {
+    padding-left: 2.4rem;
+  }
+}
 .gallery h1 {
   margin: 2.4rem 1.6rem 1.6rem;
   font-size: 3rem;
   font-weight: 600;
   color: #323232;
 }
+@media (min-width: 768px) {
+  .gallery h1 {
+    margin-left: 0;
+    margin-top: 3.6rem;
+  }
+}
 .gallery img {
   width: 100%;
   height: auto;
   padding: 0.8rem 1.6rem;
+}
+@media (min-width: 768px) {
+  .gallery img {
+    padding: 0;
+    width: 33%;
+    padding-right: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
 }
 
 .contact {
@@ -130,6 +197,12 @@ body {
   padding-top: 2.4rem;
   font-size: 3rem;
   font-weight: 600;
+}
+@media (min-width: 768px) {
+  .contact__booking {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .icons img {
