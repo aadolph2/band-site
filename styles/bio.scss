@@ -45,7 +45,6 @@
     }
     a:visited{
         color: $secondary-color;
-        
     }
 }
 .hero{
@@ -175,6 +174,10 @@
         padding-top: 2.4rem;
         font-size: 3rem;
         font-weight: 600;
+
+        @include tablet {
+            margin: 0;
+        }
     }
     &__booking {
         @include tablet {
@@ -182,15 +185,34 @@
             justify-content: space-around;
         }
     }
+    &__socials {
+        @include tablet {
+            display: flex;
+            margin: 0 2.4rem;
+            padding-top: 3.6rem;
+        }
+    }
 }
 .icons img{
-    
     padding-right: 1rem;
     padding-left: 1.6rem;
     padding-top: 2.4rem;
+
+    @include tablet {
+        padding: 0;
+        height: 90%;
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+        padding-top: 2.4rem;
+
+    }
 }
 .booking {
     margin-left: 1.6rem;
+
+    @include tablet {
+        margin: 0;
+    }
 
     h3{
         margin: 0;
@@ -211,10 +233,17 @@
         margin-left: 1.6rem;
         padding-bottom: 1.6rem;
         
+        @include tablet {
+            margin-left: 2.4rem;
+        }
     }
 }
 .footer__img img{
     padding-top: 5rem;
     padding-left: 1.6rem;
     padding-bottom: 1.6rem;
+
+    @include tablet {
+        padding-left: 2.4rem;
+    }
 }

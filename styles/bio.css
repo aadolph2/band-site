@@ -199,9 +199,21 @@ body {
   font-weight: 600;
 }
 @media (min-width: 768px) {
+  .contact h1 {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
   .contact__booking {
     display: flex;
     justify-content: space-around;
+  }
+}
+@media (min-width: 768px) {
+  .contact__socials {
+    display: flex;
+    margin: 0 2.4rem;
+    padding-top: 3.6rem;
   }
 }
 
@@ -210,9 +222,23 @@ body {
   padding-left: 1.6rem;
   padding-top: 2.4rem;
 }
+@media (min-width: 768px) {
+  .icons img {
+    padding: 0;
+    height: 90%;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+    padding-top: 2.4rem;
+  }
+}
 
 .booking {
   margin-left: 1.6rem;
+}
+@media (min-width: 768px) {
+  .booking {
+    margin: 0;
+  }
 }
 .booking h3 {
   margin: 0;
@@ -231,9 +257,19 @@ body {
   margin-left: 1.6rem;
   padding-bottom: 1.6rem;
 }
+@media (min-width: 768px) {
+  .copyright p {
+    margin-left: 2.4rem;
+  }
+}
 
 .footer__img img {
   padding-top: 5rem;
   padding-left: 1.6rem;
   padding-bottom: 1.6rem;
+}
+@media (min-width: 768px) {
+  .footer__img img {
+    padding-left: 2.4rem;
+  }
 }/*# sourceMappingURL=bio.css.map */
