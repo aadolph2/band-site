@@ -3,6 +3,7 @@
 @use "./partials/typography" as *;
 @use "./partials/mixins" as *;
 
+
 .header {
     background-color: $primary-color;
     width: 100%;
@@ -12,10 +13,10 @@
         justify-content: flex-start;
     }
     
-    img{
+    &__img{
         width: 100%;
-        height: auto;
-        padding: 1.6rem 12rem 1.6rem;
+        max-height: 30px;
+        margin: 1.6rem 0;
 
         @include tablet {
             padding-left: 3rem;
@@ -32,20 +33,19 @@
     display: flex;
     justify-content: center;
 
-    div{
+    &__tab{
         @include tablet {
             margin: 3rem 2rem 1rem 2rem;
             font-size: 1.6rem;  
         }
     }
-    a{
+    a {
         flex-grow: 1;
         text-decoration: none;
         text-align: center;
         padding-bottom: 1rem;
         font-size: 2rem;
-
-
+        border-bottom: 3px solid $primary-color;
     }
     a:hover {
         border-bottom: 3px solid $secondary-color;
@@ -89,7 +89,7 @@
 }
 
 .about {
-    h1{
+    &__title{
         margin: 2.4rem 1.6rem 1.6rem;
         font-size: 3rem;
         font-weight: 600;
