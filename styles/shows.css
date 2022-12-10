@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "AvenirNext";
+  src: url("../../assets/Font/AvenirNextLTPro-Regular.otf") format("OpenType");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AvenirNext";
+  src: url("../../assets/Font/AvenirNextLTPro-Demi.otf") format("OpenType");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AvenirNext";
+  src: url("../../assets/Font/AvenirNextLTPro-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "AvenirNext";
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-color: #323232;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+.header__img {
+  width: 100%;
+  max-height: 30px;
+  margin: 1.6rem 0;
+}
+@media (min-width: 768px) {
+  .header__img {
+    padding-right: 4rem;
+    margin: 2.4rem 2.4rem;
+  }
+}
+@media (min-width: 1280px) {
+  .header__img {
+    padding-left: 13rem;
+    margin-left: 0;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .navbar__tab {
+    margin: 3rem 2rem 1rem 2rem;
+    font-size: 1.6rem;
+  }
+}
+.navbar a {
+  flex-grow: 1;
+  text-decoration: none;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  border-bottom: 3px solid #323232;
+}
+.navbar a:hover {
+  border-bottom: 3px solid #FFFFFF;
+}
+.navbar a:active {
+  border-bottom: 3px solid #FFFFFF;
+}
+.navbar a:visited {
+  color: #FFFFFF;
+}
+
+.contact {
+  background-color: #323232;
+  color: #FFFFFF;
+}
+@media (min-width: 1280px) {
+  .contact {
+    padding: 0 13rem;
+  }
+}
+.contact__title {
+  margin: 0;
+  margin-left: 1.6rem;
+  padding-top: 2.4rem;
+  font-size: 3rem;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .contact__title {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  .contact__booking {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 768px) {
+  .contact__socials {
+    display: flex;
+    margin: 0 2.4rem;
+    padding-top: 3.6rem;
+  }
+}
+@media (min-width: 768px) {
+  .contact__socials h2 {
+    font-size: 3.6rem;
+  }
+}
+
+.icons img {
+  padding-right: 1rem;
+  padding-left: 1.6rem;
+  padding-top: 2.4rem;
+}
+@media (min-width: 768px) {
+  .icons img {
+    padding: 0;
+    height: 90%;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+    padding-top: 2.4rem;
+  }
+}
+
+.booking {
+  margin-left: 1.6rem;
+}
+@media (min-width: 768px) {
+  .booking {
+    margin: 0;
+  }
+}
+.booking__name {
+  margin: 0;
+  margin-top: 3.2rem;
+  font-weight: 500;
+}
+.booking a:link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.booking a:visited {
+  color: #FFFFFF;
+}
+
+.copyright__info {
+  margin: 0;
+  margin-left: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+@media (min-width: 768px) {
+  .copyright__info {
+    margin-left: 2.4rem;
+  }
+}
+
+.footer__img img {
+  padding-top: 5rem;
+  padding-left: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+@media (min-width: 768px) {
+  .footer__img img {
+    padding-left: 2.4rem;
+  }
+}/*# sourceMappingURL=shows.css.map */

@@ -1,0 +1,157 @@
+@use "./partials/resets";
+@use "./partials/variables" as *;
+@use "./partials/typography" as *;
+@use "./partials/mixins" as *;
+
+.header {
+    background-color: $primary-color;
+    width: 100%;
+
+    @include tablet {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    &__img{
+        width: 100%;
+        max-height: 30px;
+        margin: 1.6rem 0;
+
+        @include tablet {
+            padding-right: 4rem;
+            margin: 2.4rem 2.4rem;
+        }
+        @include desktop {
+            padding-left: 13rem;
+            margin-left: 0;
+        }
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+
+    &__tab{
+        
+        @include tablet {
+            margin: 3rem 2rem 1rem 2rem;
+            font-size: 1.6rem;  
+        }
+    }
+    a {
+        flex-grow: 1;
+        text-decoration: none;
+        text-align: center;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+        border-bottom: 3px solid $primary-color;
+    }
+    a:hover {
+        border-bottom: 3px solid $secondary-color;
+    }
+    a:active {
+        border-bottom: 3px solid $secondary-color;
+    }
+    a:visited{
+        color: $secondary-color;
+    }
+}
+
+
+
+
+
+.contact {
+    background-color: $primary-color;
+    color: $secondary-color;
+
+    @include desktop {
+        padding: 0 13rem;
+    }
+    
+    &__title {
+        margin: 0;
+        margin-left: 1.6rem;
+        padding-top: 2.4rem;
+        font-size: 3rem;
+        font-weight: 600;
+
+        @include tablet {
+            margin: 0;
+        }
+    }
+    &__booking {
+        @include tablet {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    &__socials {
+        @include tablet {
+            display: flex;
+            margin: 0 2.4rem;
+            padding-top: 3.6rem;
+        }
+        h2{
+            @include tablet {
+                font-size: 3.6rem;
+            }
+        }
+    }
+}
+.icons img{
+    padding-right: 1rem;
+    padding-left: 1.6rem;
+    padding-top: 2.4rem;
+
+    @include tablet {
+        padding: 0;
+        height: 90%;
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+        padding-top: 2.4rem;
+
+    }
+}
+.booking {
+    margin-left: 1.6rem;
+
+    @include tablet {
+        margin: 0;
+    }
+
+    &__name{
+        margin: 0;
+        margin-top: 3.2rem;
+        font-weight: 500;
+    }
+    a:link{
+        text-decoration: none;
+        color: $secondary-color;
+    }
+    a:visited{
+        color: $secondary-color;    
+    }
+    
+}
+.copyright {
+    &__info {
+        margin: 0;
+        margin-left: 1.6rem;
+        padding-bottom: 1.6rem;
+        
+        @include tablet {
+            margin-left: 2.4rem;
+        }
+    }
+}
+.footer__img img{
+    padding-top: 5rem;
+    padding-left: 1.6rem;
+    padding-bottom: 1.6rem;
+
+    @include tablet {
+        padding-left: 2.4rem;
+    }
+}
