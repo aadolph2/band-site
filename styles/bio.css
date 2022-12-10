@@ -50,14 +50,14 @@ body {
 }
 @media (min-width: 768px) {
   .header__img {
-    padding-left: 3rem;
-    padding-top: 2.5rem;
-    padding-right: 3rem;
+    padding-right: 4rem;
+    margin: 2.4rem 2.4rem;
   }
 }
 @media (min-width: 1280px) {
   .header__img {
-    padding-left: 15rem;
+    padding-left: 13rem;
+    margin-left: 0;
   }
 }
 
@@ -96,7 +96,7 @@ body {
   background-size: cover;
   position: relative;
 }
-.hero h1 {
+.hero__title {
   margin: 0;
   margin-left: 1.6rem;
   padding-top: 15rem;
@@ -106,7 +106,7 @@ body {
   font-size: 4rem;
 }
 @media (min-width: 768px) {
-  .hero h1 {
+  .hero__title {
     margin-left: 2.4rem;
     font-size: 6rem;
     padding-top: 25rem;
@@ -114,11 +114,11 @@ body {
   }
 }
 @media (min-width: 1280px) {
-  .hero h1 {
+  .hero__title {
     margin: 0;
     padding-top: 35rem;
     padding-bottom: 35rem;
-    padding-left: 15rem;
+    padding-left: 13rem;
   }
 }
 
@@ -137,7 +137,7 @@ body {
 @media (min-width: 1280px) {
   .about__title {
     margin-left: 0;
-    padding-left: 15rem;
+    padding-left: 13rem;
   }
 }
 .about img {
@@ -208,13 +208,13 @@ body {
     margin: 0 19rem;
   }
 }
-.bio h2 {
+.bio__title {
   font-weight: 600;
   font-size: 2rem;
   margin-left: 1.6rem;
 }
 @media (min-width: 768px) {
-  .bio h2 {
+  .bio__title {
     margin-top: 3.6rem;
     font-size: 2.4rem;
     margin-left: 1rem;
@@ -242,26 +242,30 @@ body {
 
 @media (min-width: 768px) {
   .gallery {
-    padding-left: 2.4rem;
+    padding: 0 2.4rem;
   }
 }
 @media (min-width: 1280px) {
   .gallery {
-    padding: 0 15rem;
+    padding: 0 13rem;
   }
 }
-.gallery h1 {
+.gallery__title {
   margin: 2.4rem 1.6rem 1.6rem;
   font-size: 3rem;
   font-weight: 600;
   color: #323232;
 }
 @media (min-width: 768px) {
-  .gallery h1 {
+  .gallery__title {
     margin-left: 0;
     margin-top: 3.6rem;
     font-size: 3.6rem;
   }
+}
+.gallery__img {
+  display: flex;
+  flex-wrap: wrap;
 }
 .gallery img {
   width: 100%;
@@ -270,10 +274,8 @@ body {
 }
 @media (min-width: 768px) {
   .gallery img {
-    padding: 0;
+    padding: 1rem;
     width: 33%;
-    padding-right: 2.4rem;
-    padding-bottom: 2.4rem;
   }
 }
 
@@ -283,10 +285,10 @@ body {
 }
 @media (min-width: 1280px) {
   .contact {
-    padding: 0 15rem;
+    padding: 0 13rem;
   }
 }
-.contact h1 {
+.contact__title {
   margin: 0;
   margin-left: 1.6rem;
   padding-top: 2.4rem;
@@ -294,7 +296,7 @@ body {
   font-weight: 600;
 }
 @media (min-width: 768px) {
-  .contact h1 {
+  .contact__title {
     margin: 0;
   }
 }
@@ -312,7 +314,7 @@ body {
   }
 }
 @media (min-width: 768px) {
-  .contact__socials h1 {
+  .contact__socials h2 {
     font-size: 3.6rem;
   }
 }
@@ -340,7 +342,7 @@ body {
     margin: 0;
   }
 }
-.booking h3 {
+.booking__name {
   margin: 0;
   margin-top: 3.2rem;
   font-weight: 500;
@@ -353,13 +355,13 @@ body {
   color: #FFFFFF;
 }
 
-.copyright p {
+.copyright__info {
   margin: 0;
   margin-left: 1.6rem;
   padding-bottom: 1.6rem;
 }
 @media (min-width: 768px) {
-  .copyright p {
+  .copyright__info {
     margin-left: 2.4rem;
   }
 }
