@@ -89,6 +89,76 @@ body {
   color: #FFFFFF;
 }
 
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/Images/hero-shows.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+@media (min-width: 1280px) {
+  .hero {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.hero__album, .hero__song {
+  margin: 0;
+  margin-left: 1.6rem;
+  color: #FFFFFF;
+}
+.hero__album {
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  .hero__album {
+    margin-left: 2.4rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__album {
+    margin-left: 13rem;
+    padding-top: 20rem;
+  }
+}
+.hero__song {
+  padding-bottom: 3rem;
+  font-weight: 600;
+  font-size: 4rem;
+}
+@media (min-width: 768px) {
+  .hero__song {
+    margin-left: 2.4rem;
+    font-size: 6rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__song {
+    margin: 0;
+    padding-bottom: 20rem;
+    padding-left: 13rem;
+  }
+}
+.hero__soundcloud {
+  margin-left: 1.6rem;
+  padding-bottom: 5rem;
+  width: 50%;
+}
+@media (min-width: 768px) {
+  .hero__soundcloud {
+    margin-left: 2.4rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__soundcloud {
+    margin-right: 13rem;
+    margin-top: 25rem;
+    width: 30%;
+  }
+}
+
 .contact {
   background-color: #323232;
   color: #FFFFFF;
