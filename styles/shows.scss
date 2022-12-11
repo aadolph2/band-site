@@ -123,6 +123,21 @@
     }
 }
 
+.shows {
+    margin-left: 1.6rem;
+    font-size: 1.6rem;
+    padding-bottom: 8rem;
+    border-bottom: 2px solid $quaternary-color;
+
+    &__title {
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: $quaternary-color;
+    }
+    
+
+}
+
 .contact {
     background-color: $primary-color;
     color: $secondary-color;

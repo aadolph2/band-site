@@ -159,6 +159,18 @@ body {
   }
 }
 
+.shows {
+  margin-left: 1.6rem;
+  font-size: 1.6rem;
+  padding-bottom: 8rem;
+  border-bottom: 2px solid #E1E1E1;
+}
+.shows__title {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #E1E1E1;
+}
+
 .contact {
   background-color: #323232;
   color: #FFFFFF;
