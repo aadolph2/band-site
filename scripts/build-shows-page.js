@@ -30,3 +30,23 @@ const shows = [
     "location": "San Francisco, CA"   
     }
 ]
+
+    
+
+    for (let i = 0; i < shows.length; ++i) {
+        let dateItem = shows[i].date;
+        //creating var to hold string
+
+        // const venueItem = shows[i].venue;
+        // const locationItem = shows[i].location;
+
+        let container = document.createElement("div");
+        //creating the div container
+        let element = document.createElement("p");
+        //creating p element to hold text from object
+        element.innertext = dateItem;
+        element.classList.add("shows__title")
+        //adding class to p element
+
+        showsContainer.append(dateItem);
+    }
