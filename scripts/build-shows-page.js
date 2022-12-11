@@ -34,7 +34,7 @@ const shows = [
     
 
     for (let i = 0; i < shows.length; ++i) {
-        let dateItem = shows[i].date;
+        const showsItem = shows[i].date;
         //creating var to hold string
 
         // const venueItem = shows[i].venue;
@@ -44,9 +44,9 @@ const shows = [
         //creating the div container
         let element = document.createElement("p");
         //creating p element to hold text from object
-        element.innertext = dateItem;
+        element.innertext = showsItem.date;
         element.classList.add("shows__title")
         //adding class to p element
 
-        showsContainer.append(dateItem);
+        container.append(element);
     }
