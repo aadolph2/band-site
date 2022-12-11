@@ -279,6 +279,52 @@ body {
   }
 }
 
+.commentsContainer {
+  padding: 0 1.6rem;
+}
+.commentsPage {
+  display: flex;
+  flex-direction: column;
+}
+.commentsPage__title {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #E1E1E1;
+}
+.commentsPage__name {
+  min-height: 3.6rem;
+}
+.commentsPage__comment {
+  margin-bottom: 1.6rem;
+  min-height: 7.2rem;
+}
+.commentsPage__submit {
+  margin-bottom: 1.6rem;
+  height: 3.2rem;
+  width: 85%;
+  background-color: #323232;
+  border-radius: 4px;
+}
+.commentsPage__name, .commentsPage__comment {
+  width: 85%;
+  margin-left: 1rem;
+  border-radius: 4px;
+  border-color: #E1E1E1;
+  background-color: #FAFAFA;
+}
+.commentsPage__title, .commentsPage__comment, .commentsPage__submit {
+  margin-left: 5rem;
+}
+
+.profilePic {
+  border-radius: 50%;
+  height: 3.6rem;
+  width: 3.6rem;
+  position: relative;
+  top: 1.2rem;
+}
+
 .contact {
   background-color: #323232;
   color: #FFFFFF;
