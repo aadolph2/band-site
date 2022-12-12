@@ -95,6 +95,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  margin-bottom: 1.6rem;
 }
 @media (min-width: 1280px) {
   .hero {
@@ -159,11 +160,20 @@ body {
   }
 }
 
+.showsContainer h2 {
+  margin: 3.2rem 1.6rem;
+  font-size: 4rem;
+}
+
 .shows {
-  margin: 0 1.6rem;
+  padding: 1.6rem;
   font-size: 1.6rem;
   padding-bottom: 2rem;
   border-bottom: 2px solid #E1E1E1;
+}
+.shows__details {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
 }
 .shows__title {
   font-weight: 400;

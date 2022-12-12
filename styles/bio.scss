@@ -3,400 +3,384 @@
 @use "./partials/typography" as *;
 @use "./partials/mixins" as *;
 
-
 .header {
-    background-color: $primary-color;
+  background-color: $primary-color;
+  width: 100%;
+
+  @include tablet {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__img {
     width: 100%;
+    max-height: 30px;
+    margin: 1.6rem 0;
 
     @include tablet {
-        display: flex;
-        justify-content: flex-start;
+      padding-right: 4rem;
+      margin: 2.4rem 2.4rem;
     }
-    
-    &__img{
-        width: 100%;
-        max-height: 30px;
-        margin: 1.6rem 0;
-
-        @include tablet {
-            padding-right: 4rem;
-            margin: 2.4rem 2.4rem;
-        }
-        @include desktop {
-            padding-left: 13rem;
-            margin-left: 0;
-        }
+    @include desktop {
+      padding-left: 13rem;
+      margin-left: 0;
     }
+  }
 }
 
 .navbar {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    &__tab{
-        
-        @include tablet {
-            margin: 3rem 2rem 1rem 2rem;
-            font-size: 1.6rem;  
-        }
+  &__tab {
+    @include tablet {
+      margin: 3rem 2rem 1rem 2rem;
+      font-size: 1.6rem;
     }
-    a {
-        flex-grow: 1;
-        text-decoration: none;
-        text-align: center;
-        padding-bottom: 1rem;
-        font-size: 2rem;
-        border-bottom: 3px solid $primary-color;
-    }
-    a:hover {
-        border-bottom: 3px solid $secondary-color;
-    }
-    a:active {
-        border-bottom: 3px solid $secondary-color;
-    }
-    a:visited{
-        color: $secondary-color;
-    }
+  }
+  a {
+    flex-grow: 1;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    border-bottom: 3px solid $primary-color;
+  }
+  a:hover {
+    border-bottom: 3px solid $secondary-color;
+  }
+  a:active {
+    border-bottom: 3px solid $secondary-color;
+  }
+  a:visited {
+    color: $secondary-color;
+  }
 }
-.hero{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/Images/hero-bio.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    
-    &__title{
-        margin: 0;
-        margin-left: 1.6rem;
-        padding-top: 15rem;
-        padding-bottom: 15rem;
-        color: $secondary-color;
-        font-weight: 600;
-        font-size: 4rem;
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/Images/hero-bio.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 
-        @include tablet {
-            margin-left: 2.4rem;
-            font-size: 6rem;
-            padding-top: 25rem;
-            padding-bottom: 25rem;
-        }
-        @include desktop {
-            margin: 0;
-            padding-top: 35rem;
-            padding-bottom: 35rem;
-            padding-left: 13rem;
-        }
+  &__title {
+    margin: 0;
+    margin-left: 1.6rem;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    color: $secondary-color;
+    font-weight: 600;
+    font-size: 4rem;
+
+    @include tablet {
+      margin-left: 2.4rem;
+      font-size: 6rem;
+      padding-top: 25rem;
+      padding-bottom: 25rem;
     }
+    @include desktop {
+      margin: 0;
+      padding-top: 35rem;
+      padding-bottom: 35rem;
+      padding-left: 13rem;
+    }
+  }
 }
 
 .about {
-    &__title{
-        margin: 2.4rem 1.6rem 1.6rem;
-        font-size: 3rem;
-        font-weight: 600;
-        color: $primary-color;
-    
-        @include tablet {
-            margin-top: 3.6rem;
-            font-size: 3.6rem;
-        }
-        @include desktop {
-            margin-left: 0;
-            padding-left: 13rem;
-        }
-    }
-
-    img{
-        width: 100%;
-        padding: 0 1.6rem;
-
-        @include tablet {
-            padding: 0 10rem;
-        }
-        @include desktop {
-            padding: 0 20rem;
-        }
-    }
-    &__quote{
-        margin-left: 1.6rem;
-        margin-right: 1.6rem;
-        font-size: 2rem;
-        font-weight: 600;
-        color: $primary-color;
-
-        @include tablet {
-            padding: 0 10rem;
-            margin-left: 0rem;
-            margin-right: 0rem;
-            font-size: 2.4rem;
-            margin-bottom: 1.6rem;
-        }
-        @include desktop {
-            padding: 0 20rem;
-        }
-    }
-    &__credit {
-        margin-left: 1.6rem;
-        margin-right: 1.6rem;
-        font-size: 2rem;
-        font-weight: 600;
-        color: $primary-color;
-        
-        @include tablet {
-            margin: 0;
-            padding: 0 10rem;
-            font-weight: 400;
-        }
-        @include desktop {
-            padding: 0 20rem;
-        }
-    }
-}
-
-.bio {
+  &__title {
+    margin: 2.4rem 1.6rem 1.6rem;
+    font-size: 3rem;
+    font-weight: 600;
     color: $primary-color;
 
     @include tablet {
-        margin: 0 9rem;
+      margin-top: 3.6rem;
+      font-size: 3.6rem;
     }
     @include desktop {
-        margin: 0 19rem;
+      margin-left: 0;
+      padding-left: 13rem;
     }
-    &__title {
-        font-weight: 600;
-        font-size: 2rem;
-        margin-left: 1.6rem;
+  }
 
-        @include tablet {
-            margin-top: 3.6rem;
-            font-size: 2.4rem;
-            margin-left: 1rem;
-        }
-
-    }
-    &__info{
-        font-size: 1.8rem;
-        margin-left: 1.6rem;
-        margin-right: 1.6rem;
-
-        @include tablet {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-            
-            font-size: 2rem;
-            margin: 0;
-        }
-
-        p {
-            @include tablet {
-                margin: 0 1rem
-            }
-        }
-    }
-
-}
-
-.gallery {
-    @include tablet {
-        padding: 0 2.4rem;
-    }
-    @include desktop {
-        padding: 0 13rem;
-    }
-
-    &__title {
-        margin: 2.4rem 1.6rem 1.6rem;
-        font-size: 3rem;
-        font-weight: 600;
-        color: $primary-color;
-
-        @include tablet {
-            margin-left: 0;
-            margin-top: 3.6rem;
-            font-size: 3.6rem;
-        }
-    }
-    
-    &__img {
-        display: flex;
-        flex-wrap: wrap;
-        
-        
-    }
-    
-    img {
-        width: 100%;
-        height: auto;
-        padding: .8rem 1.6rem;
-
-        @include tablet {
-            padding: 1rem;
-            width: 33%;
-        }
-    }
-    
-}
-.commentsContainer {
+  img {
+    width: 100%;
     padding: 0 1.6rem;
 
-    h2{
-
+    @include tablet {
+      padding: 0 10rem;
     }
-}
-.commentsPage {
-    display: flex;
-    flex-direction: column;
-
-    &__title {
-        margin-bottom: 0;
-        font-weight: 400;
-        font-size: 1.6rem;
-        color: $quaternary-color;
-        
-
-    }
-    
- 
-    &__name {
-        min-height: 3.6rem;
-        font-family: "AvenirNext";
-        
-    }
-    &__comment {
-        margin-bottom: 1.6rem;
-        min-height: 7.2rem;
-        font-family: "AvenirNext";
-    }
-    &__submit {
-        margin-bottom:1.6rem; 
-        height: 5rem;
-        width: 85%;
-        color: $secondary-color;
-        font-size: 2rem;
-        font-family: "AvenirNext";
-        background-color: $primary-color;
-        border-radius: 4px;
-        border-style: none;
-    }
-    
-    &__name,
-    &__comment {
-        width: 85%;
-        margin-left: 1rem;
-        border-radius: 4px;
-        border-color: $quaternary-color;
-        background-color: $tertiary-color;
-        border: 2px solid $quaternary-color;
-        
-    }
-
-    &__title,
-    &__comment,
-    &__submit {
-        margin-left: 5rem;
-    }        
- 
-    
-}
-.profilePic {
-    border-radius: 50%;
-    height: 3.6rem;
-    width: 3.6rem;
-    position: relative;
-    top: 1.2rem;   
-}
-
-.contact {
-    background-color: $primary-color;
-    color: $secondary-color;
-
     @include desktop {
-        padding: 0 13rem;
+      padding: 0 20rem;
     }
-    
-    &__title {
-        margin: 0;
-        margin-left: 1.6rem;
-        padding-top: 2.4rem;
-        font-size: 3rem;
-        font-weight: 600;
-
-        @include tablet {
-            margin: 0;
-        }
-    }
-    &__booking {
-        @include tablet {
-            display: flex;
-            justify-content: space-around;
-        }
-    }
-    &__socials {
-        @include tablet {
-            display: flex;
-            margin: 0 2.4rem;
-            padding-top: 3.6rem;
-        }
-        h2{
-            @include tablet {
-                font-size: 3.6rem;
-            }
-        }
-    }
-}
-.icons img{
-    padding-right: 1rem;
-    padding-left: 1.6rem;
-    padding-top: 2.4rem;
+  }
+  &__quote {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: $primary-color;
 
     @include tablet {
-        padding: 0;
-        height: 90%;
-        padding-right: 2.4rem;
-        padding-left: 2.4rem;
-        padding-top: 2.4rem;
-
+      padding: 0 10rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      font-size: 2.4rem;
+      margin-bottom: 1.6rem;
     }
+    @include desktop {
+      padding: 0 20rem;
+    }
+  }
+  &__credit {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: $primary-color;
+
+    @include tablet {
+      margin: 0;
+      padding: 0 10rem;
+      font-weight: 400;
+    }
+    @include desktop {
+      padding: 0 20rem;
+    }
+  }
 }
-.booking {
+
+.bio {
+  color: $primary-color;
+
+  @include tablet {
+    margin: 0 9rem;
+  }
+  @include desktop {
+    margin: 0 19rem;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 2rem;
     margin-left: 1.6rem;
 
     @include tablet {
-        margin: 0;
+      margin-top: 3.6rem;
+      font-size: 2.4rem;
+      margin-left: 1rem;
+    }
+  }
+  &__info {
+    font-size: 1.8rem;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+
+    @include tablet {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+
+      font-size: 2rem;
+      margin: 0;
     }
 
-    &__name{
-        margin: 0;
-        margin-top: 3.2rem;
-        font-weight: 500;
+    p {
+      @include tablet {
+        margin: 0 1rem;
+      }
     }
-    a:link{
-        text-decoration: none;
-        color: $secondary-color;
+  }
+}
+
+.gallery {
+  @include tablet {
+    padding: 0 2.4rem;
+  }
+  @include desktop {
+    padding: 0 13rem;
+  }
+
+  &__title {
+    margin: 2.4rem 1.6rem 1.6rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: $primary-color;
+
+    @include tablet {
+      margin-left: 0;
+      margin-top: 3.6rem;
+      font-size: 3.6rem;
     }
-    a:visited{
-        color: $secondary-color;    
+  }
+
+  &__img {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    padding: 0.8rem 1.6rem;
+
+    @include tablet {
+      padding: 1rem;
+      width: 33%;
     }
-    
+  }
+}
+.commentsContainer {
+  padding: 0 1.6rem;
+
+  h2 {
+  }
+}
+.commentsPage {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: $quaternary-color;
+  }
+
+  &__name {
+    min-height: 3.6rem;
+    font-family: "AvenirNext";
+  }
+  &__comment {
+    margin-bottom: 1.6rem;
+    min-height: 7.2rem;
+    font-family: "AvenirNext";
+  }
+  &__submit {
+    margin-bottom: 1.6rem;
+    height: 5rem;
+    width: 85%;
+    color: $secondary-color;
+    font-size: 2rem;
+    font-family: "AvenirNext";
+    background-color: $primary-color;
+    border-radius: 4px;
+    border-style: none;
+  }
+
+  &__name,
+  &__comment {
+    width: 85%;
+    margin-left: 1rem;
+    border-radius: 4px;
+    border-color: $quaternary-color;
+    background-color: $tertiary-color;
+    border: 2px solid $quaternary-color;
+  }
+
+  &__title,
+  &__comment,
+  &__submit {
+    margin-left: 5rem;
+  }
+}
+.profilePic {
+  border-radius: 50%;
+  height: 3.6rem;
+  width: 3.6rem;
+  position: relative;
+  top: 1.2rem;
+}
+
+.contact {
+  background-color: $primary-color;
+  color: $secondary-color;
+
+  @include desktop {
+    padding: 0 13rem;
+  }
+
+  &__title {
+    margin: 0;
+    margin-left: 1.6rem;
+    padding-top: 2.4rem;
+    font-size: 3rem;
+    font-weight: 600;
+
+    @include tablet {
+      margin: 0;
+    }
+  }
+  &__booking {
+    @include tablet {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  &__socials {
+    @include tablet {
+      display: flex;
+      margin: 0 2.4rem;
+      padding-top: 3.6rem;
+    }
+    h2 {
+      @include tablet {
+        font-size: 3.6rem;
+      }
+    }
+  }
+}
+.icons img {
+  padding-right: 1rem;
+  padding-left: 1.6rem;
+  padding-top: 2.4rem;
+
+  @include tablet {
+    padding: 0;
+    height: 90%;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+    padding-top: 2.4rem;
+  }
+}
+.booking {
+  margin-left: 1.6rem;
+
+  @include tablet {
+    margin: 0;
+  }
+
+  &__name {
+    margin: 0;
+    margin-top: 3.2rem;
+    font-weight: 500;
+  }
+  a:link {
+    text-decoration: none;
+    color: $secondary-color;
+  }
+  a:visited {
+    color: $secondary-color;
+  }
 }
 .copyright {
-    &__info {
-        margin: 0;
-        margin-left: 1.6rem;
-        padding-bottom: 1.6rem;
-        
-        @include tablet {
-            margin-left: 2.4rem;
-        }
-    }
-}
-.footer__img img{
-    padding-top: 5rem;
-    padding-left: 1.6rem;
+  &__info {
+    margin: 0;
+    margin-left: 1.6rem;
     padding-bottom: 1.6rem;
 
     @include tablet {
-        padding-left: 2.4rem;
+      margin-left: 2.4rem;
     }
+  }
+}
+.footer__img img {
+  padding-top: 5rem;
+  padding-left: 1.6rem;
+  padding-bottom: 1.6rem;
+
+  @include tablet {
+    padding-left: 2.4rem;
+  }
 }
