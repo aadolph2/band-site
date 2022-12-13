@@ -22,17 +22,35 @@ const comments = [
 const displayComments = (commentsArray) => {
   for (let i = 0; i < commentsArray.length; i++) {
     const commentsData = commentsArray[i];
-    const commentEl = document.createElement("article");
-    const imgEl = document.createElement("div");
-    const nameDateEl = document.createElement("div");
-    const contentEl = document.createElement("div");
-    const commentInfoEl = document.createElement("p");
-    const nameEl = document.createElement("p");
-    const dateEl = document.createElement("p");
 
+    const commentEl = document.createElement("article");
+
+    const contentEl = document.createElement("div");
+
+    const imgEl = document.createElement("div");
+    imgEl.classList.add("commentsSection__img");
+    commentEl.appendChild(imgEl);
+
+    const nameDateEl = document.createElement("div");
+    nameDateEl.classList.add("commentsSection__nameDate");
+    contentEl.appendChild(nameDateEl);
+
+    const nameEl = document.createElement("p");
     nameEl.innerText = commentsData.name;
+    nameEl.classList.add("commentsSection__name");
+    nameDateEl.appendChild(nameEl);
+
+    const dateEl = document.createElement("p");
     dateEl.innerText = commentsData.date;
+    dateEl.classList.add("commentsSection__date");
+    nameDateEl.appendChild(dateEl);
+
+    const commentInfoEl = document.createElement("p");
     commentInfoEl.innerText = commentsData.comment;
+    commentInfoEl.classList.add("commentsSection__comment");
+    contentEl.appendChild(commentInfoEl);
+
+    commentsContainer.append(contentEl);
   }
 };
 const commentsContainer = document.querySelector(".commentsContainer");
@@ -43,7 +61,7 @@ displayComments(comments);
 //flex-direction column nameDateCommentWrapper
 //article
 ///imgDiv
-////contentDiv
+///contentDiv
 /////nameDateWrapper
 /////----name+date
 /////commentinfo
