@@ -231,12 +231,7 @@
     }
   }
 }
-.commentsContainer {
-  padding: 0 1.6rem;
 
-  h2 {
-  }
-}
 .commentsPage {
   display: flex;
   flex-direction: column;
@@ -293,7 +288,22 @@
   top: 1.2rem;
 }
 
-.contact {
+.commentsSeciton {
+  &__img {
+  }
+  &__content {
+  }
+  &__nameDate {
+  }
+  &__name {
+  }
+  &__date {
+  }
+  &__comment {
+  }
+}
+
+. .contact {
   background-color: $primary-color;
   color: $secondary-color;
 
