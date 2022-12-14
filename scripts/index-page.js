@@ -24,8 +24,10 @@ const displayComments = (commentsArray) => {
     const commentsData = commentsArray[i];
 
     const commentEl = document.createElement("article");
+    commentEl.classList.add("commentsSection__article");
 
     const contentEl = document.createElement("div");
+    contentEl.classList.add("commentsSection__content");
 
     const imgEl = document.createElement("div");
     imgEl.classList.add("commentsSection__img");
@@ -50,7 +52,8 @@ const displayComments = (commentsArray) => {
     commentInfoEl.classList.add("commentsSection__comment");
     contentEl.appendChild(commentInfoEl);
 
-    commentsContainer.append(contentEl);
+    commentEl.append(contentEl);
+    commentsContainer.append(commentEl);
   }
 };
 const commentsContainer = document.querySelector(".commentsContainer");
@@ -66,11 +69,7 @@ displayComments(comments);
 /////----name+date
 /////commentinfo
 
-// Put the comment text
-
-// Invoke the displayComments()
-
-// ---
+const formEl = document.querySelector(".commentsPage");
 
 // Select the form element via JS
 

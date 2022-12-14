@@ -279,9 +279,6 @@ body {
   }
 }
 
-.commentsContainer {
-  padding: 0 1.6rem;
-}
 .commentsPage {
   display: flex;
   flex-direction: column;
@@ -332,6 +329,24 @@ body {
   top: 1.2rem;
 }
 
+.commentsSection__article {
+  display: flex;
+  margin: 0 1.6rem;
+}
+.commentsSection__img {
+  height: 5rem;
+  width: 5rem;
+  background-color: #323232;
+  padding: 1rem;
+}
+.commentsSection__content {
+  display: flex;
+  flex-direction: column;
+}
+.commentsSection__nameDate {
+  display: flex;
+  justify-content: space-between;
+}
 .contact {
   background-color: #323232;
   color: #FFFFFF;
