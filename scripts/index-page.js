@@ -71,18 +71,14 @@ displayComments(comments);
 
 const formEl = document.querySelector(".commentsPage");
 
-// Select the form element via JS
+formEl.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const name = event.target.name.value;
+  const comment = event.target.comment.value;
+});
 
 // Select the comments section via JS
-
-// Add an event listener
-
-// prevent default (don't refresh the page)
-
-// Get the name
-// const name = event.target.name.value
-
-// Get the comment
 
 // Validate that the user provided a name + comment
 // if(!name || !comment) {

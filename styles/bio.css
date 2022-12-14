@@ -282,6 +282,7 @@ body {
 .commentsPage {
   display: flex;
   flex-direction: column;
+  margin: 0 1.6rem;
 }
 .commentsPage__title {
   margin-bottom: 0;
