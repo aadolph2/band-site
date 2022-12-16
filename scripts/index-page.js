@@ -56,54 +56,40 @@ const displayComments = (commentsArray) => {
     commentsContainer.append(commentEl);
   }
 };
-const commentsContainer = document.querySelector(".commentsContainer");
+const commentsContainer = document.querySelector(".commentsSectionContainer");
 
 displayComments(comments);
 
-//commentsEl wraps everything, name and date wrapped by nameDateEl,
-//flex-direction column nameDateCommentWrapper
-//article
-///imgDiv
-///contentDiv
-/////nameDateWrapper
-/////----name+date
-/////commentinfo
-
 const formEl = document.querySelector(".commentsPage");
+const commentsSection = document.querySelector(".commentsSection");
+const nameEl = document.querySelector(".commentsPage__name");
+const commentEl = document.querySelector(".commentsPage__comment");
 
 formEl.addEventListener("submit", (event) => {
   event.preventDefault();
 
+  const date = new Date().toLocaleDateString();
   const name = event.target.name.value;
   const comment = event.target.comment.value;
+
+  if (!name) {
+    nameEl.classList.replace("commentsPage__name", "commentsPage__name-error");
+    alert("MISSING FIELD: NAME");
+    return;
+  }
+  if (!comment) {
+    commentEl.classList.replace(
+      "commentsPage__comment",
+      "commentsPage__comment-error"
+    );
+    alert("MISSING FIELD: COMMENT");
+    return;
+  }
+
+  comments.push({ name, date, comment });
+  // commentsSection.innerHTML = ""; CANNOT SET PROPERTIES OF NULL
+  displayComments(comments);
 });
 
 // Select the comments section via JS
-
-// Validate that the user provided a name + comment
-// if(!name || !comment) {
-
-// If name was empty
-// Get the name input element
-// Add a class to it (form__input--error)
-
-// If comment was empty
-// Get the comment input element
-// Add a class to it (form__input--error)
-
-// return;
-// }
-
-// Get rid of the error class on the inputs
-
-// Genreate the date for today "21/11/2022"
-// const date = new Date().toLocaleDateString()
-
-// add (comments.push()) a new object to the comment array
-
-// comments.push({name: name, comment: comment, date: date })
-
-// Clear the existing comments on the page
-// commentsSection.innerHTML = "";
-
 // Run the function above (run the loop)

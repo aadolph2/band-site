@@ -244,11 +244,18 @@
     color: $quaternary-color;
   }
 
-  &__name {
+  &__name,
+  &__comment {
+    border: 2px solid $quaternary-color;
+  }
+
+  &__name,
+  &__name-error {
     min-height: 3.6rem;
     font-family: "AvenirNext";
   }
-  &__comment {
+  &__comment,
+  &__comment-error {
     margin-bottom: 1.6rem;
     min-height: 7.2rem;
     font-family: "AvenirNext";
@@ -266,18 +273,25 @@
   }
 
   &__name,
-  &__comment {
+  &__comment,
+  &__comment-error,
+  &__name-error {
     width: 85%;
     margin-left: 1rem;
     border-radius: 4px;
-    border-color: $quaternary-color;
     background-color: $tertiary-color;
-    border: 2px solid $quaternary-color;
   }
 
   &__title,
   &__comment,
   &__submit {
+    margin-left: 5rem;
+  }
+  &__comment-error,
+  &__name-error {
+    border: 2px solid red;
+  }
+  &__comment-error {
     margin-left: 5rem;
   }
 }
@@ -293,16 +307,20 @@
   &__article {
     display: flex;
     margin: 0 1.6rem;
+    border-bottom: 2px solid $quaternary-color;
   }
   &__img {
-    height: 5rem;
-    width: 5rem;
-    background-color: $primary-color;
-    padding: 1rem;
+    height: 3.6rem;
+    width: 3.6rem;
+    background-color: $quaternary-color;
+    border-radius: 30rem;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
   }
   &__content {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   &__nameDate {
     display: flex;
@@ -314,6 +332,11 @@
   }
   &__comment {
   }
+}
+
+.commentsSectionContainer {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .contact {

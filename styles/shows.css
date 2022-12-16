@@ -80,13 +80,13 @@ body {
   border-bottom: 3px solid #323232;
 }
 .navbar a:hover {
-  border-bottom: 3px solid #FFFFFF;
+  border-bottom: 3px solid #ffffff;
 }
 .navbar a:active {
-  border-bottom: 3px solid #FFFFFF;
+  border-bottom: 3px solid #ffffff;
 }
 .navbar a:visited {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .hero {
@@ -106,7 +106,7 @@ body {
 .hero__album, .hero__song {
   margin: 0;
   margin-left: 1.6rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .hero__album {
   padding-top: 7rem;
@@ -169,7 +169,7 @@ body {
   padding: 1.6rem;
   font-size: 1.6rem;
   padding-bottom: 2rem;
-  border-bottom: 2px solid #E1E1E1;
+  border-bottom: 2px solid #e1e1e1;
 }
 .shows__details {
   margin-top: 1.6rem;
@@ -179,14 +179,14 @@ body {
 .shows__title {
   font-weight: 400;
   font-size: 1.2rem;
-  color: #E1E1E1;
+  color: #e1e1e1;
 }
 .shows__button {
   width: 100%;
   height: 5rem;
   font-size: 2rem;
   font-family: "AvenirNext";
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #323232;
   border-radius: 4px;
   border-style: none;
@@ -194,7 +194,7 @@ body {
 
 .contact {
   background-color: #323232;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media (min-width: 1280px) {
   .contact {
@@ -262,10 +262,10 @@ body {
 }
 .booking a:link {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .booking a:visited {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .copyright__info {

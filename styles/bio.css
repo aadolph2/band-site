@@ -80,13 +80,13 @@ body {
   border-bottom: 3px solid #323232;
 }
 .navbar a:hover {
-  border-bottom: 3px solid #FFFFFF;
+  border-bottom: 3px solid #ffffff;
 }
 .navbar a:active {
-  border-bottom: 3px solid #FFFFFF;
+  border-bottom: 3px solid #ffffff;
 }
 .navbar a:visited {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .hero {
@@ -101,7 +101,7 @@ body {
   margin-left: 1.6rem;
   padding-top: 15rem;
   padding-bottom: 15rem;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 600;
   font-size: 4rem;
 }
@@ -288,13 +288,16 @@ body {
   margin-bottom: 0;
   font-weight: 400;
   font-size: 1.6rem;
-  color: #E1E1E1;
+  color: #e1e1e1;
 }
-.commentsPage__name {
+.commentsPage__name, .commentsPage__comment {
+  border: 2px solid #e1e1e1;
+}
+.commentsPage__name, .commentsPage__name-error {
   min-height: 3.6rem;
   font-family: "AvenirNext";
 }
-.commentsPage__comment {
+.commentsPage__comment, .commentsPage__comment-error {
   margin-bottom: 1.6rem;
   min-height: 7.2rem;
   font-family: "AvenirNext";
@@ -303,22 +306,26 @@ body {
   margin-bottom: 1.6rem;
   height: 5rem;
   width: 85%;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 2rem;
   font-family: "AvenirNext";
   background-color: #323232;
   border-radius: 4px;
   border-style: none;
 }
-.commentsPage__name, .commentsPage__comment {
+.commentsPage__name, .commentsPage__comment, .commentsPage__comment-error, .commentsPage__name-error {
   width: 85%;
   margin-left: 1rem;
   border-radius: 4px;
-  border-color: #E1E1E1;
-  background-color: #FAFAFA;
-  border: 2px solid #E1E1E1;
+  background-color: #fafafa;
 }
 .commentsPage__title, .commentsPage__comment, .commentsPage__submit {
+  margin-left: 5rem;
+}
+.commentsPage__comment-error, .commentsPage__name-error {
+  border: 2px solid red;
+}
+.commentsPage__comment-error {
   margin-left: 5rem;
 }
 
@@ -333,24 +340,33 @@ body {
 .commentsSection__article {
   display: flex;
   margin: 0 1.6rem;
+  border-bottom: 2px solid #e1e1e1;
 }
 .commentsSection__img {
-  height: 5rem;
-  width: 5rem;
-  background-color: #323232;
-  padding: 1rem;
+  height: 3.6rem;
+  width: 3.6rem;
+  background-color: #e1e1e1;
+  border-radius: 30rem;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
 }
 .commentsSection__content {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .commentsSection__nameDate {
   display: flex;
   justify-content: space-between;
 }
+.commentsSectionContainer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .contact {
   background-color: #323232;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media (min-width: 1280px) {
   .contact {
@@ -418,10 +434,10 @@ body {
 }
 .booking a:link {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .booking a:visited {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .copyright__info {
