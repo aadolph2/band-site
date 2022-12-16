@@ -359,6 +359,17 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.commentsSection__name {
+  font-weight: 600;
+  color: #323232;
+}
+.commentsSection__date {
+  color: #e1e1e1;
+}
+.commentsSection__comment {
+  color: #323232;
+}
+
 .commentsSectionContainer {
   display: flex;
   flex-direction: column-reverse;

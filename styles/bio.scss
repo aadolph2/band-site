@@ -327,10 +327,14 @@
     justify-content: space-between;
   }
   &__name {
+    font-weight: 600;
+    color: $primary-color;
   }
   &__date {
+    color: $quaternary-color;
   }
   &__comment {
+    color: $primary-color;
   }
 }
 

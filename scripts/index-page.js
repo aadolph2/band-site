@@ -61,7 +61,6 @@ const commentsContainer = document.querySelector(".commentsSectionContainer");
 displayComments(comments);
 
 const formEl = document.querySelector(".commentsPage");
-const commentsSection = document.querySelector(".commentsSection");
 const nameEl = document.querySelector(".commentsPage__name");
 const commentEl = document.querySelector(".commentsPage__comment");
 
@@ -87,9 +86,6 @@ formEl.addEventListener("submit", (event) => {
   }
 
   comments.push({ name, date, comment });
-  // commentsSection.innerHTML = ""; CANNOT SET PROPERTIES OF NULL
+  commentsContainer.innerHTML = "";
   displayComments(comments);
 });
-
-// Select the comments section via JS
-// Run the function above (run the loop)
