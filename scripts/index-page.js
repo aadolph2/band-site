@@ -27,8 +27,8 @@ const displayComments = (commentsArray) => {
     nameDateEl.appendChild(nameEl);
 
     const dateEl = document.createElement("p");
-
-    dateEl.innetText = commentsData.timestamp;
+    const date = new Date(commentsData.timestamp);
+    dateEl.innerText = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
     dateEl.classList.add("commentsSection__date");
     nameDateEl.appendChild(dateEl);
 
