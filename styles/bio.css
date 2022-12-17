@@ -240,6 +240,9 @@ body {
   }
 }
 
+.gallery {
+  background-color: #fafafa;
+}
 @media (min-width: 768px) {
   .gallery {
     padding: 0 2.4rem;
@@ -287,6 +290,11 @@ body {
     margin: 0 2.4rem;
   }
 }
+@media (min-width: 1280px) {
+  .commentsContainer {
+    margin: 0 13rem;
+  }
+}
 .commentsContainer h2 {
   font-size: 3rem;
   color: #323232;
@@ -300,6 +308,11 @@ body {
 @media (min-width: 768px) {
   .commentsPage {
     margin: 0 2.4rem;
+  }
+}
+@media (min-width: 1280px) {
+  .commentsPage {
+    margin: 0 30rem;
   }
 }
 .commentsPage__title {
@@ -400,6 +413,11 @@ body {
 @media (min-width: 768px) {
   .commentsSectionContainer {
     margin: 2.4rem;
+  }
+}
+@media (min-width: 1280px) {
+  .commentsSectionContainer {
+    margin: 0 30rem;
   }
 }
 

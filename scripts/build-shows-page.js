@@ -10,10 +10,6 @@ const showsTitle = document.createElement("h2");
 showsTitle.innerText = "Shows";
 showsSection.append(showsTitle);
 
-const titleHeader = document.createElement("div");
-titleHeader.classList.add("titlesContainer");
-showsSection.append(titleHeader);
-
 const h3 = (title, container, className) => {
   const titleEl = document.createElement("h3");
   titleEl.innerText = title;
@@ -21,9 +17,18 @@ const h3 = (title, container, className) => {
   container.append(titleEl);
 };
 
+const showsGroup = document.createElement("div");
+showsGroup.classList.add("shows__group");
+showsEl.append(showsGroup);
+
+const titleHeader = document.createElement("div");
+titleHeader.classList.add("titlesContainer");
+showsGroup.append(titleHeader);
+
 h3("DATE", titleHeader, "titlesContainer__names");
 h3("VENUE", titleHeader, "titlesContainer__names");
 h3("LOCATION", titleHeader, "titlesContainer__names");
+h3("EMPTY", titleHeader, "titlesContainer__placeHolder");
 
 const displayShows = (show) => {
   for (let i = 0; i < show.length; i++) {
@@ -59,7 +64,7 @@ const displayShows = (show) => {
     buttonEl.classList.add("shows__button");
     showContainerEl.append(buttonEl);
 
-    showsEl.append(showContainerEl);
+    showsGroup.append(showContainerEl);
   }
 };
 
@@ -71,4 +76,3 @@ axios
   .catch((error) => {
     console.log(error);
   });
-// displayShows();

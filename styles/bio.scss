@@ -195,6 +195,8 @@
 }
 
 .gallery {
+  background-color: $tertiary-color;
+
   @include tablet {
     padding: 0 2.4rem;
   }
@@ -238,6 +240,9 @@
   @include tablet {
     margin: 0 2.4rem;
   }
+  @include desktop {
+    margin: 0 13rem;
+  }
 
   h2 {
     font-size: 3rem;
@@ -252,6 +257,9 @@
 
   @include tablet {
     margin: 0 2.4rem;
+  }
+  @include desktop {
+    margin: 0 30rem;
   }
 
   &__title {
@@ -365,6 +373,9 @@
 
   @include tablet {
     margin: 2.4rem;
+  }
+  @include desktop {
+    margin: 0 30rem;
   }
 }
 
