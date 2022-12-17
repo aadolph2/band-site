@@ -279,10 +279,28 @@ body {
   }
 }
 
+.commentsContainer {
+  margin: 0 1.6rem;
+}
+@media (min-width: 768px) {
+  .commentsContainer {
+    margin: 0 2.4rem;
+  }
+}
+.commentsContainer h2 {
+  font-size: 3rem;
+  color: #323232;
+}
+
 .commentsPage {
   display: flex;
   flex-direction: column;
   margin: 0 1.6rem;
+}
+@media (min-width: 768px) {
+  .commentsPage {
+    margin: 0 2.4rem;
+  }
 }
 .commentsPage__title {
   margin-bottom: 0;
@@ -312,6 +330,11 @@ body {
   background-color: #323232;
   border-radius: 4px;
   border-style: none;
+}
+@media (min-width: 768px) {
+  .commentsPage__submit {
+    width: 25%;
+  }
 }
 .commentsPage__name, .commentsPage__comment, .commentsPage__comment-error, .commentsPage__name-error {
   width: 85%;
@@ -373,6 +396,11 @@ body {
 .commentsSectionContainer {
   display: flex;
   flex-direction: column-reverse;
+}
+@media (min-width: 768px) {
+  .commentsSectionContainer {
+    margin: 2.4rem;
+  }
 }
 
 .contact {

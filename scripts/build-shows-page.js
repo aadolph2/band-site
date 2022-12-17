@@ -31,10 +31,10 @@ const shows = [
   },
 ];
 
-const h3 = (title, container) => {
+const h3 = (title, container, className) => {
   const titleEl = document.createElement("h3");
   titleEl.innerText = title;
-  titleEl.classList.add("shows__title");
+  titleEl.classList.add(className);
   container.append(titleEl);
 };
 
@@ -44,25 +44,33 @@ const showsTitle = document.createElement("h2");
 showsTitle.innerText = "Shows";
 showsSection.append(showsTitle);
 
+const titleHeader = document.createElement("div");
+titleHeader.classList.add("titlesContainer");
+showsSection.append(titleHeader);
+
+h3("DATE", titleHeader, "titlesContainer__names");
+h3("VENUE", titleHeader, "titlesContainer__names");
+h3("LOCATION", titleHeader, "titlesContainer__names");
+
 const displayShows = (show) => {
   const showContainerEl = document.createElement("article");
   showContainerEl.classList.add("shows");
 
-  h3("DATE", showContainerEl);
+  h3("DATE", showContainerEl, "shows__title");
 
   const dateEl = document.createElement("p");
   dateEl.innerText = show.date;
   dateEl.classList.add("shows__details");
   showContainerEl.append(dateEl);
 
-  h3("VENUE", showContainerEl);
+  h3("VENUE", showContainerEl, "shows__title");
 
   const venueEl = document.createElement("p");
   venueEl.innerText = show.venue;
   venueEl.classList.add("shows__details");
   showContainerEl.append(venueEl);
 
-  h3("LOCATION", showContainerEl);
+  h3("LOCATION", showContainerEl, "shows__title");
 
   const locationEl = document.createElement("p");
   locationEl.innerText = show.location;
