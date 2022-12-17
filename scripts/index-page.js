@@ -1,25 +1,7 @@
-//key:13e6724b-7a76-4de9-b366-c2be24ae7e0f
+const BASE_API_URL = "https://project-1-api.herokuapp.com/";
+const API_KEY = "?api_key=13e6724b-7a76-4de9-b366-c2be24ae7e0f";
 
-const comments = [
-  {
-    name: "Connor Walton",
-    date: "02/17/2021",
-    comment:
-      "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains.",
-  },
-  {
-    name: "Emilie Beach",
-    date: "01/09/2021",
-    comment:
-      "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.",
-  },
-  {
-    name: "Miles Acosta",
-    date: "12/20/2020",
-    comment:
-      "I can t stop listening. Every time I hear one of their songs the vocals it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can t get enough.",
-  },
-];
+const commentsURL = `${BASE_API_URL}comments${API_KEY}`;
 
 const displayComments = (commentsArray) => {
   for (let i = 0; i < commentsArray.length; i++) {
@@ -45,7 +27,8 @@ const displayComments = (commentsArray) => {
     nameDateEl.appendChild(nameEl);
 
     const dateEl = document.createElement("p");
-    dateEl.innerText = commentsData.date;
+
+    dateEl.innetText = commentsData.timestamp;
     dateEl.classList.add("commentsSection__date");
     nameDateEl.appendChild(dateEl);
 
@@ -60,7 +43,14 @@ const displayComments = (commentsArray) => {
 };
 const commentsContainer = document.querySelector(".commentsSectionContainer");
 
-displayComments(comments);
+axios
+  .get(commentsURL)
+  .then((result) => {
+    displayComments(result.data);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
 
 const formEl = document.querySelector(".commentsPage");
 const nameEl = document.querySelector(".commentsPage__name");
@@ -69,7 +59,6 @@ const commentEl = document.querySelector(".commentsPage__comment");
 formEl.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const date = new Date().toLocaleDateString();
   const name = event.target.name.value;
   const comment = event.target.comment.value;
 
@@ -87,7 +76,32 @@ formEl.addEventListener("submit", (event) => {
     return;
   }
 
-  comments.push({ name, date, comment });
   commentsContainer.innerHTML = "";
-  displayComments(comments);
+
+  axios
+    .post(commentsURL, {
+      name: name,
+      comment: comment,
+    })
+    .then((result) => {
+      console.log(result);
+    });
+
+  axios
+    .get(commentsURL)
+    .then((result) => {
+      displayComments(result.data);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 });
+
+// axios
+//   .get(commentsURL)
+//   .then((result) => {
+//     displayComments(result.data);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
