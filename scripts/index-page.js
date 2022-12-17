@@ -97,11 +97,4 @@ formEl.addEventListener("submit", (event) => {
     });
 });
 
-// axios
-//   .get(commentsURL)
-//   .then((result) => {
-//     displayComments(result.data);
-//   })
-//   .catch((error) => {
-//     console.log(error);
-//   });
+//comments are displaying after the page refreshes
