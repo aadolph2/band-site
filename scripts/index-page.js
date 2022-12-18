@@ -90,11 +90,10 @@ formEl.addEventListener("submit", (event) => {
   axios
     .get(commentsURL)
     .then((result) => {
+      location.reload();
       displayComments(result.data);
     })
     .catch((error) => {
       console.log(error);
     });
 });
-
-//comments are displaying after the page refreshes
