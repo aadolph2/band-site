@@ -173,6 +173,7 @@ body {
 @media (min-width: 1280px) {
   .showsContainer h2 {
     margin: 0 13rem;
+    margin-top: 4.8rem;
   }
 }
 
@@ -193,6 +194,7 @@ body {
   margin-top: 1.6rem;
   margin-bottom: 1.6rem;
   color: #323232;
+  width: 20%;
 }
 .shows__title {
   font-weight: 400;
@@ -235,16 +237,17 @@ body {
     justify-content: space-between;
     margin: 0 1.6rem;
     padding-left: 1.6rem;
-    padding-right: 15rem;
   }
 }
 .titlesContainer__names {
   font-weight: 400;
   font-size: 1.2rem;
   color: #e1e1e1;
+  width: 20%;
 }
 .titlesContainer__placeHolder {
   color: white;
+  width: 20%;
 }
 
 .contact {
@@ -258,6 +261,7 @@ body {
 }
 .contact__title {
   margin: 0;
+  margin-top: 2rem;
   margin-left: 1.6rem;
   padding-top: 2.4rem;
   font-size: 3rem;
@@ -278,6 +282,7 @@ body {
   .contact__socials {
     display: flex;
     margin: 0 2.4rem;
+    margin-top: 4rem;
     padding-top: 3.6rem;
   }
 }
